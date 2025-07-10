@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <nav class="navbar">
+            <div class="logo">Port<span class="logo-accent">folio</span></div>
+            <div class="nav-menu">
+                <a href="#" class="nav-item">Home</a>
+                <a href="#" class="nav-item">Work</a>
+                <a href="#" class="nav-item">About</a>
+                <a href="#" class="nav-item contact-btn">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <main class="hero">
+    <div class="hero-content">
+            <h1>Edilawit<br>Gerum</h1>
+            <div class="hero-text">
+                <p>Hello! I'm a full stack React and Rails developer specializing in creating beautiful, functional websites and applications.</p>
+                <p>If you're looking for a developer who combines technical expertise with an eye for design, let's work together on your next project.</p>
+                <div class="cta-button">Start collaboration</div>
+            </div>
+        </div>
+        <div class="geometric-pattern">
+            <img src="./Resources/image-geometry_1.png" alt="background">
+        </div>
+    </main>
+
+    <section class="portfolio-showcase">
+        <div class="portfolio-grid">
+            <!-- Left column with two items -->
+            <div class="portfolio-column left-column">
+                <!-- Project card with laptop mockup -->
+                <div class="portfolio-item project-card">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <h3>E-commerce Platform</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Ruby on Rails</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <a href="#" class="see-project-btn">See this project <span class="arrow">→</span></a>
+                        </div>
+                        <div class="project-image">
+                            <img src="./Resources/laptop_only.png" alt="Laptop mockup" class="device-mockup">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Geometric patterns card -->
+                <div class="portfolio-item geometry-card">
+                    <img src="./Resources/geometry_besides_geometry.png" alt="Geometric patterns" class="geometric-pattern">
+                </div>
+            </div>
+            
+            <!-- Right column with laptop and phone mockup -->
+            <div class="portfolio-column right-column">
+                <div class="portfolio-item laptop-phone">
+                    <img src="./Resources/laptop_and_phone.png" alt="Laptop and phone mockup" class="device-mockup">
+                </div>
+                <!-- Shape accent is positioned absolutely -->
+                <div class="shape-accent">
+                    <img src="./Resources/Shape.png" alt="Geometric shape" class="shape-accent-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="skills-grid">
+            <div class="skills-card blue-bg">
+                <h3>Languages</h3>
+                <ul>
+                    <li>• JavaScript (ES6+)</li>
+                    <li>• TypeScript</li>
+                    <li>• HTML5</li>
+                    <li>• CSS3/SASS</li>
+                </ul>
+                <div class="background-symbol hashtag">#</div>
+            </div>
+            <div class="skills-card red-bg">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>• React.js</li>
+                    <li>• Ruby on Rails</li>
+                    <li>• Redux</li>
+                    <li>• Tailwind CSS</li>
+                </ul>
+                <div class="background-symbol diamond"></div>
+            </div>
+            <div class="skills-card yellow-bg">
+                <h3>Skills</h3>
+                <ul>
+                    <li>• Responsive Design</li>
+                    <li>• RESTful API Design</li>
+                    <li>• Git/GitHub</li>
+                    <li>• UI/UX Principles</li>
+                    <li>• Performance Optimization</li>
+                </ul>
+                <div class="background-symbol lightbulb"></div>
+            </div>
+        </div>
+        
+        <div class="about-content">
+            <h2 class="about-title">About</h2>
+            <p class="about-text">As a full stack React and Rails developer, I specialize in building robust web applications with clean, maintainable code. With expertise in both frontend and backend technologies, I can help bring your digital ideas to life.</p>
+            <div class="cv-button">
+                Get my CV
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 16L12 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 13L12 16L15 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="dots-pattern"></div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-left">
+            <!-- Geometric shape on left side will be handled by the contact-decor-left -->
+        </div>
+        <div class="contact-content">
+            <h2 class="contact-title">Let's Work Together</h2>
+            <p class="contact-text">Looking for a React and Rails developer for your next project? I'm currently available for freelance work and full-time opportunities. Let's build something amazing together.</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" placeholder="Your name" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" placeholder="your.email@example.com" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your message</label>
+                    <textarea id="message" placeholder="Enter your message here..."></textarea>
+                </div>
+                
+                <button type="submit" class="start-collab-btn">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-right">
+            <!-- Geometric shape on right side will be handled by the contact-decor-right -->
+        </div>
+        
+        <!-- 90 degree corner images -->
+        <div class="corner-top-left">
+            <img src="./Resources/90_degrees1.png" alt="90 degree corner" />
+        </div>
+        <div class="corner-bottom-right">
+            <img src="./Resources/90_degrees2.png" alt="90 degree corner" />
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">EG</div>
+            <p class="footer-tagline">Full Stack React & Rails Developer</p>
+            <div class="social-links">
+                <a href="https://github.com/edilawit" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/edilawit-gerum" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/edilawit" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="mailto:edilawit@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal Overlay -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalProjectTitle">Project name goes here</h2>
+                <div class="modal-tags">
+                    <span class="modal-tag">HTML/CSS</span>
+                    <span class="modal-tag">Ruby on Rails</span>
+                    <span class="modal-tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="./Resources/laptop_only.png" alt="Project screenshot" id="modalProjectImage">
+                </div>
+                <div class="modal-description">
+                    <h3>Project Description</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="modal-buttons">
+                        <a href="#" class="modal-btn live-btn">See Live <i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="modal-btn source-btn">See Source <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-navigation">
+                    <a href="#" class="prev-project"><i class="fas fa-arrow-left"></i> Previous project</a>
+                    <a href="#" class="next-project">Next project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
